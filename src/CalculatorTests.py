@@ -12,6 +12,8 @@ class MyTestCase(unittest.TestCase):
         self.assertIsInstance(self.calculator, Calculator)
 
     # Testing
+    def test_add_method_calculator(self):
+        self.assertEqual(self.calculator.add(6,4), 10)
 
 
 
