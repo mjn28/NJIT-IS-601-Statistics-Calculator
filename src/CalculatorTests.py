@@ -3,9 +3,17 @@ from Calculator import Calculator
 
 
 class MyTestCase(unittest.TestCase):
+
+    def setUp(self):
+        self.calculator = Calculator()
+
+    # To test instantiation of calculator class
     def test_instantiate_calculator(self):
-        calculator = Calculator()
-        self.assertIsInstance(calculator, Calculator)
+        self.assertIsInstance(self.calculator, Calculator)
+
+    # Testing
+
+
 
 
 if __name__ == '__main__':
