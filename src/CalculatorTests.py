@@ -14,7 +14,11 @@ class MyTestCase(unittest.TestCase):
     # Testing
     def test_add_method_calculator(self):
         self.assertEqual(self.calculator.add(6,4), 10)
+        self.assertEqual(self.calculator.result, 10)
 
+    def test_subtract_method_calculator(self):
+        self.assertEqual(self.calculator.subtract(6,4), 2)
+        self.assertEqual(self.calculator.result, 2)
 
 
 

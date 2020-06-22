@@ -2,6 +2,10 @@
 def addition(a, b):
     return a + b
 
+#subtraction static method
+def subtraction (a, b):
+    return a - b
+
 class Calculator:
 
     result = 0
@@ -10,7 +14,12 @@ class Calculator:
     def __init__(self):
         pass
 
-    #Addition method
+    #Add method
     def add(self, a, b):
         self.result = a + b
-        return addition(a,b)
+        return self.result
+
+    #Subtract method
+    def subtract(self, a, b):
+        self.result = a - b
+        return self.result
