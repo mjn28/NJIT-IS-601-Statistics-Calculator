@@ -45,6 +45,14 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(round(self.calculator.result, 9), float(row['Result']))
         divide_test_data.clear()
 
+    #Testing squared
+    def test_squared(self):
+        square_test_data = CsvReader('/src/Unit Test Square.csv').data
+        for row in square_test_data:
+            self.assertEqual(self.calculator.square (row['Value 1']), int(row['Result']))
+            self.assertEqual(self.calculator.result, int(row['Result']))
+        square_test_data.clear()
+
 
 
 
