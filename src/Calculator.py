@@ -1,13 +1,20 @@
-#addition static method
+#Addition static method
 def addition(a, b):
+    a = int(a)
+    b = int(b)
     return a + b
 
-#subtraction static method
+#Subtraction static method
 def subtraction (a, b):
     a = int(a)
     b = int(b)
-    c = b - a
-    return c
+    return b - a
+
+#Multiplication static method
+def multiplication (a, b):
+    a = int(a)
+    b = int(b)
+    return a * b
 
 class Calculator:
 
@@ -19,12 +26,15 @@ class Calculator:
 
     #Add method
     def add(self, a, b):
-        a=int(a)
-        b=int(b)
         self.result = addition(a,b)
         return self.result
 
     #Subtract method
     def subtract(self, a, b):
         self.result = subtraction(a,b)
+        return self.result
+
+    #Multiply method
+    def multiply(self, a, b):
+        self.result=multiplication(a, b)
         return self.result
