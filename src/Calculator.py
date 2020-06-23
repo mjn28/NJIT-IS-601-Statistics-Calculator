@@ -16,6 +16,12 @@ def multiplication (a, b):
     b = int(b)
     return a * b
 
+#Division static method
+def division (a, b):
+    a = int(a)
+    b = int(b)
+    return a / b
+
 class Calculator:
 
     result = 0
@@ -37,4 +43,9 @@ class Calculator:
     #Multiply method
     def multiply(self, a, b):
         self.result = multiplication(a, b)
+        return self.result
+
+    #Divide method
+    def divide(self, a, b):
+        self.result = division(a, b)
         return self.result
