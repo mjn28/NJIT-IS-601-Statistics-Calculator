@@ -62,8 +62,7 @@ class MyTestCase(unittest.TestCase):
         square_root_test_data.clear()
 
     def test_results(self):
-        self.assertEquals(self.calculator.result, 0)
-
+        self.assertEqual(self.calculator.result, 0)
 
 if __name__ == '__main__':
     unittest.main()
