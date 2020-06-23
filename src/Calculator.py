@@ -18,9 +18,9 @@ def multiplication (a, b):
 
 #Division static method
 def division (a, b):
-    a = int(a)
-    b = int(b)
-    return a / b
+    a = float(a)
+    b = float(b)
+    return b / a
 
 class Calculator:
 
@@ -48,4 +48,4 @@ class Calculator:
     #Divide method
     def divide(self, a, b):
         self.result = division(a, b)
-        return self.result
+        return round(float(self.result), 9)
