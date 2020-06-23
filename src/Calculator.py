@@ -31,8 +31,8 @@ def squared (a):
 
 #Squared root static method
 def squared_root (a):
-    a = int(a)
-    return a/a
+    a = float(a)
+    return math.sqrt(a)
 
 class Calculator:
 
@@ -66,3 +66,8 @@ class Calculator:
     def square(self, a):
         self.result = squared(a)
         return self.result
+
+    #Square root method
+    def square_root(self, a):
+        self.result = squared_root(a)
+        return round(float(self.result), 9)
