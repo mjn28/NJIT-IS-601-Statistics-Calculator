@@ -22,6 +22,11 @@ def division (a, b):
     b = float(b)
     return b / a
 
+#Squared static method
+def squared (a):
+    a = int(a)
+    return a*a
+
 class Calculator:
 
     result = 0
@@ -49,3 +54,8 @@ class Calculator:
     def divide(self, a, b):
         self.result = division(a, b)
         return round(float(self.result), 9)
+
+    #Square method
+    def square(self, a):
+        self.result = squared(a)
+        return self.result
