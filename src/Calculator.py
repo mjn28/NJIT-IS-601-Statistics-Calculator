@@ -1,3 +1,5 @@
+import math
+
 #Addition static method
 def addition(a, b):
     a = int(a)
@@ -26,6 +28,11 @@ def division (a, b):
 def squared (a):
     a = int(a)
     return a*a
+
+#Squared root static method
+def squared_root (a):
+    a = int(a)
+    return a/a
 
 class Calculator:
 
