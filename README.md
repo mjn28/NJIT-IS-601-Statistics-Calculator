@@ -4,4 +4,4 @@
 ### Team Project 2 - Stats Calculator Group
 ### Group Members: Monica Nelson and Kelly Blackledge
 
-###Changelog
+### Changelog
